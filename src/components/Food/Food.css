@@ -1,0 +1,37 @@
+.food{
+    width: 300px;
+    height: 450px;
+    border: 1px solid #95A0A7;
+    border-radius: 8px;
+    position: relative;
+}
+
+.food img{
+    width: 286px;
+    height: 286px;
+    border-radius: 8px;
+    margin: 7px;
+}
+
+.food-info{
+    margin-left: 15px;
+}
+
+.button-order{
+    width: 100%;
+    background-color: #FFE0B3;
+    border: 0;
+    border-radius: 0px 0px 8px 8px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button-text{
+    margin-right: 10PX;
+}
+
+.button-order:hover{
+    background-color: orange;
+}
