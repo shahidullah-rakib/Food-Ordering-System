@@ -5,7 +5,11 @@ import './Food.css'
 
 const Food = (props) => {
     const { picture, name, price } = props.food;
-    console.log(props)
+    const { handleAddToOrder } = props;
+    // handleAddToOrder
+    //console.log(props)
+
+    //console.log(props)
     return (
         <div className='food'>
             <img src={picture} alt="" />
@@ -14,7 +18,7 @@ const Food = (props) => {
                 <p><b>Price:</b> ${price}</p>
             </div>
 
-            <button className='button-order'>
+            <button className='button-order' onClick={() => handleAddToOrder(props.food)}>
                 <p className='button-text'>
                     Add For Order
                 </p>
