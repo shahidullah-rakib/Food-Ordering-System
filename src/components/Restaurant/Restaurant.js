@@ -31,7 +31,12 @@ const Restaurant = () => {
         setRandomOrder(randomFood)
         //console.log(randomFood.name);
     }
-    console.log(randomOrder)
+    //console.log(randomOrder)
+
+    const handleChooseAgain = () => {
+        setOrder([]);
+        setRandomOrder([])
+    }
 
     return (
         <div className='restaurant-container'>
@@ -51,7 +56,7 @@ const Restaurant = () => {
                     }
                 </div>
                 <button className='btn-select' onClick={() => handleAddToRandom()}>CHOOSE 1 FOR ME</button><br />
-                <button className='btn-remove'>CHOOSE AGAIN</button>
+                <button className='btn-remove' onClick={() => handleChooseAgain()}>CHOOSE AGAIN</button>
                 <p>{randomOrder.name}</p>
             </div>
         </div>
