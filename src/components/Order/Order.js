@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBowlFood, faDeleteLeft } from '@fortawesome/free-solid-svg-icons'
+import { faDeleteLeft } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 import './Order.css'
 

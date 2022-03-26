@@ -23,13 +23,15 @@ const Restaurant = () => {
     //random foor selection
     //console.log(order)
     const handleAddToRandom = () => {
-        if (randomOrder.name == []) {
-            alert('no data found')
-        }
         const random = Math.floor(Math.random() * order.length);
         const randomFood = (random, order[random])
-        setRandomOrder(randomFood)
-        //console.log(randomFood.name);
+
+        try {
+            setRandomOrder(randomFood.name)
+        }
+        catch (err) {
+            alert('No Food Selected')
+        }
     }
     //console.log(randomOrder)
 
@@ -57,7 +59,7 @@ const Restaurant = () => {
                 </div>
                 <button className='btn-select' onClick={() => handleAddToRandom()}>CHOOSE 1 FOR ME</button><br />
                 <button className='btn-remove' onClick={() => handleChooseAgain()}>CHOOSE AGAIN</button>
-                <p>{randomOrder.name}</p>
+                <p>{randomOrder}</p>
             </div>
         </div>
     );
