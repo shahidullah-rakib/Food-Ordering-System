@@ -57,7 +57,7 @@ const Restaurant = () => {
                 </div>
                 <button className='btn-select' onClick={() => handleAddToRandom()}>CHOOSE 1 FOR ME</button><br />
                 <button className='btn-remove' onClick={() => handleChooseAgain()}>CHOOSE AGAIN</button>
-                <p>{randomOrder}</p>
+                <p className='bg-success text-center mt-5'>{randomOrder}</p>
             </div>
         </div>
     );
