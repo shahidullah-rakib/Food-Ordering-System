@@ -1,5 +1,12 @@
 .order{
-    position: sticky;
-    top: 0;
-    padding: 30px 20px;
+    display: flex;
+    padding: 15px;
+}
+.order p{
+    margin: 10px 20px 0 20px;
+}
+
+.order button{
+    padding: 0;
+    padding-top: 0;
 }

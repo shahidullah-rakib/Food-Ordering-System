@@ -1,16 +1,16 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBowlFood, faDeleteLeft } from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 import './Order.css'
 
 const Order = (props) => {
-    //console.log(props.order)
-    const { order } = props;
-    console.log(order)
+    //console.log(props)
+    const { picture, price, name, id } = props.item
     return (
         <div className='order'>
-            <h2>Your Order</h2>
-            <p>{order}</p>
-            <button>CHOOSE 1 FOR ME</button><br />
-            <button>CHOOSE AGAIN</button>
+            <img src={picture} width='50px' alt="" />
+            <p><b>{name}</b>  <br /> Price: ${price} </p>
+            <button><FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon></button>
         </div>
     );
 };

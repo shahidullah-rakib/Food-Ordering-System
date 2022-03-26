@@ -15,4 +15,30 @@
 
 .order-container{
     background-color: rgba(255, 153, 0, 0.3);
+
 }
+
+.btn-select{
+    color: green;
+    font-size: large;
+    padding:20px 35px 20px 35px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.btn-remove{
+    color: red;
+    font-size: large;
+    padding:20px 50px 20px 50px;
+    border-radius: 10px;
+}
+
+.btn-select:hover{
+    background-color: green;
+    color: white;
+}
+.btn-remove:hover{
+    background-color: red;
+    color: white;
+}
+
