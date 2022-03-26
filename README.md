@@ -1,8 +1,13 @@
-# Getting Started with Create React App
+# Order Your Food
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live site link----(https://react-food-order-system.netlify.app/)
 
-## Available Scripts
+## Available Features
+
+1. Order Your Selected Food
+2. Save in cart
+3. Choose The Food by Randomly
+4. Clean Your Cart Order
 
 In the project directory, you can run:
 
