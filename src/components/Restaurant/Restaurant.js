@@ -16,10 +16,11 @@ const Restaurant = () => {
 
 
     const handleAddToOrder = (food) => {
-        console.log(food.name);
+        //console.log(food.name);
         // setOrder(food);
         // console.log(order);
         const newOrder = food.name;
+        //const newOrder = [...order, food];
         setOrder(newOrder);
     }
 
