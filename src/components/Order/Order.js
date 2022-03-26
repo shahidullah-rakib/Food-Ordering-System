@@ -10,7 +10,7 @@ const Order = (props) => {
         <div className='order'>
             <img src={picture} width='50px' alt="" />
             <p><b>{name}</b>  <br /> Price: ${price} </p>
-            <button><FontAwesomeIcon icon={faDeleteLeft}></FontAwesomeIcon></button>
+            <button type="button" className="btn-close mt-3" aria-label="Close"></button>
         </div>
     );
 };

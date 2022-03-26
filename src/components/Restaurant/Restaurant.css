@@ -15,7 +15,6 @@
 
 .order-container{
     background-color: rgba(255, 153, 0, 0.3);
-
 }
 
 .btn-select{
@@ -41,4 +40,32 @@
     background-color: red;
     color: white;
 }
+
+@media screen and (max-width: 480px) {
+    .restaurant-container{
+        display: flex;
+    }
+    .menu-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-left: 5px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .btn-select{
+        color: green;
+        font-size: large;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        padding: 10px 8px 10px 8px;
+    }
+    
+    .btn-remove{
+        color: red;
+        font-size: large;
+        padding: 10px 5px 10px 5px;
+        border-radius: 10px;
+    }
+  }
 

@@ -35,3 +35,20 @@
 .button-order:hover{
     background-color: orange;
 }
+
+@media screen and (max-width: 480px) {
+    .food{
+        width: 220px;
+        height: 350px;
+        border: 1px solid #95A0A7;
+        border-radius: 8px;
+        position: relative;
+    }
+    
+    .food img{
+        width: 200px;
+        height: 200px;
+        border-radius: 8px;
+        margin: 7px;
+    }
+  }

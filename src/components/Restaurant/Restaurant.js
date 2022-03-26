@@ -20,8 +20,7 @@ const Restaurant = () => {
         setOrder(newOrder);
     }
 
-    //random foor selection
-    //console.log(order)
+    //random food selection
     const handleAddToRandom = () => {
         const random = Math.floor(Math.random() * order.length);
         const randomFood = (random, order[random])
@@ -33,7 +32,6 @@ const Restaurant = () => {
             alert('No Food Selected')
         }
     }
-    //console.log(randomOrder)
 
     const handleChooseAgain = () => {
         setOrder([]);

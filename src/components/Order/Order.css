@@ -3,10 +3,15 @@
     padding: 15px;
 }
 .order p{
-    margin: 10px 20px 0 20px;
+    margin: 0px 20px 0 20px;
 }
 
-.order button{
-    padding: 0;
-    padding-top: 0;
-}
+@media screen and (max-width: 480px) {
+    .order{
+        display: flex;
+        padding: 15px;
+    }
+    .order p{
+        margin: 0px;
+    }
+  }
